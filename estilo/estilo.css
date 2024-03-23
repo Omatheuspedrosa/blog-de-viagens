@@ -1,4 +1,9 @@
-body {
+@font-face {
+    font-family: 'Avenir Light';
+    src: url(../fontes/Avenir\ Light.ttf);
+}
+
+body, p {
     margin: 0;
     padding: 0;
 }
@@ -15,7 +20,7 @@ header {
 
 header #barraDePesquisa i {
     position: absolute;
-    left: 145px; /* ajuste conforme necessário */
+    left: 145px; 
     top: 32px;
     transform: translateY(-50%);
     transform: translateX(800%);
@@ -78,6 +83,31 @@ header div input {
     color: #194D91;
 }
 
-#redesSociais a i .ultimo {
+main #boasVindas {
+    display: flex;
+    flex-direction: column;
+    height: 475px;
+    padding: 80px;
+    background: url(../imagens/imagem-sessao-boas-vindas\(2\).webp) no-repeat;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+main #boasVindas h1 {
     margin: 0;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Avenir Light', sans-serif;
+}
+
+main #boasVindas p.p1 {
+    font-family: 'Avenir Light', sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+main #boasVindas p.p2 {
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Avenir Light', sans-serif;
 }
