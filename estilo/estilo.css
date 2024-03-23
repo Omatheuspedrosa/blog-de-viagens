@@ -23,7 +23,7 @@ header #barraDePesquisa i {
     left: 145px; 
     top: 32px;
     transform: translateY(-50%);
-    transform: translateX(800%);
+    transform: translateX(750%);
     z-index: 1;
 }
 
@@ -35,6 +35,10 @@ header div input {
     border: none;
     border-bottom: 1px solid black;
     background-color: #F2F2F2;
+}
+
+header #barraDePesquisa:hover {
+    border-bottom: 1px solid black;
 }
 
 #menu ul {
@@ -110,4 +114,8 @@ main #boasVindas p.p2 {
     font-size: 18px;
     font-weight: 100;
     font-family: 'Avenir Light', sans-serif;
+}
+
+@media screen and (max-width: 400px) {
+    
 }
