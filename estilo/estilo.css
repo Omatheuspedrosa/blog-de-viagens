@@ -3,6 +3,11 @@
     src: url(../fontes/Avenir\ Light.ttf);
 }
 
+@font-face {
+    font-family: 'EB Garamond';
+    src: url(../fontes/eb_garamond/EBGaramond-Regular.ttf);
+}
+
 body, p {
     margin: 0;
     padding: 0;
@@ -33,12 +38,12 @@ header div input {
     height: 41px;
     padding: 12px;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid gray;
     background-color: #F2F2F2;
 }
 
 header #barraDePesquisa:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid gray;
 }
 
 #menu ul {
@@ -91,10 +96,13 @@ main #boasVindas {
     display: flex;
     flex-direction: column;
     height: 475px;
-    padding: 80px;
     background: url(../imagens/imagem-sessao-boas-vindas\(2\).webp) no-repeat;
     text-align: center;
     color: #FFFFFF;
+}
+
+main #boasVindas div{  
+    margin: 80px 0; 
 }
 
 main #boasVindas h1 {
@@ -116,6 +124,43 @@ main #boasVindas p.p2 {
     font-family: 'Avenir Light', sans-serif;
 }
 
-@media screen and (max-width: 400px) {
-    
+main #categorias {
+    height: 475px;
+    text-align: center;
+}
+
+main #categorias p {
+    margin: 70px 200px;
+    font-family: 'Avenir Light', sans-serif;
+    font-size: 15px;
+    color: #696969;
+}
+
+main #categorias div {
+    display: flex;
+    justify-content: center;
+}
+
+main #categorias div section {
+    position: relative;
+    margin-right: 15px;
+}
+
+main #categorias div section button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #2573DA;
+    font-family: 'EB Garamond';
+    font-size: 24px;
+}
+
+main #categorias div section button:hover {
+    background-color: #2573DA;
+    color: #FFFFFF;
 }
