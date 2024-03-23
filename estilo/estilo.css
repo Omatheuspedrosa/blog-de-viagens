@@ -1,19 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
-    border: 1px solid red;
     margin: 0;
     padding: 0;
     height: 79px;
     background-color: #F2F2F2;
     display: flex;
-    /* justify-content: space-evenly; */
+    justify-content: space-evenly;
     align-items: center;
 }
 
+header #barraDePesquisa i {
+    position: absolute;
+    left: 145px; /* ajuste conforme necessário */
+    top: 32px;
+    transform: translateY(-50%);
+    transform: translateX(800%);
+    z-index: 1;
+}
+
 header div input {
+    position: relative;
     width: 153px;
     height: 41px;
     padding: 12px;
     border: none;
     border-bottom: 1px solid black;
     background-color: #F2F2F2;
+}
+
+#menu ul {
+    width: 502px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu ul li {
+    margin-right: 30px;
+    list-style: none;
+}
+
+#menu ul li a {
+    color: #696969;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+#menu ul li a:hover {
+    color: #194D91;
+}
+
+#menu ul li a:active {
+    color: #194D91;
+}
+
+#menu ul li a:link {
+    color: #696969;
+}
+
+#redesSociais {
+    display: flex;
+    justify-content: space-around;
+}
+
+#redesSociais i {
+    color: #9a9c9e;
+    margin-right: 12px;
+}
+
+#redesSociais i:hover {
+    color: #194D91;
+}
+
+#redesSociais a i .ultimo {
+    margin: 0;
 }
