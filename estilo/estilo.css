@@ -1,12 +1,4 @@
-@font-face {
-    font-family: 'Avenir Light';
-    src: url(../fontes/Avenir\ Light.ttf);
-}
-
-@font-face {
-    font-family: 'EB Garamond';
-    src: url(../fontes/eb_garamond/EBGaramond-Regular.ttf);
-}
+@import url(fontes.css);
 
 body, p {
     margin: 0;
@@ -127,6 +119,7 @@ main #boasVindas p.p2 {
 main #categorias {
     height: 475px;
     text-align: center;
+    /* border: 1px solid blueviolet; */
 }
 
 main #categorias p {
@@ -144,6 +137,7 @@ main #categorias div {
 main #categorias div section {
     position: relative;
     margin-right: 15px;
+    margin-bottom: 0;
 }
 
 main #categorias div section button {
@@ -163,4 +157,81 @@ main #categorias div section button {
 main #categorias div section button:hover {
     background-color: #2573DA;
     color: #FFFFFF;
+}
+
+#acessorias {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 165px;
+    background-color: #F2F2F2;
+}
+
+#acessorias h2 {
+    font-family: 'EB Garamond';
+    font-weight: 100;
+    font-size: 24px;
+    color: #000000;
+    text-align: start;
+    border-right: 2px solid gray;
+    display: inline; 
+    padding-right: 15px;
+}
+
+#acessorias span p.viagensBlog{
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align-last: right;
+    line-height: 0.8em;
+}
+
+#acessorias span p span {
+    font-family: 'Helvetica Light';
+    font-weight: 0;
+    font-size: 20px;
+}
+
+#acessorias .tourAviao {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
+#acessorias  .tourAviao i{
+    margin-bottom: 5px;
+    transform: rotate(315deg);
+    transform: translate();
+}
+
+#acessorias .tourAviao p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
+#acessorias .viagemMundial {
+    font-family: 'Lulo Clean', sans-serif;
+    font-weight: 900;
+    font-size: 21px;
+    letter-spacing: 0.2em;
+    line-height: 1em;
+}
+
+#acessorias .nuvemSky {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#acessorias .nuvemSky i {
+    transform: translate(70%);
+    margin-bottom: 5px;
+}
+
+#acessorias .nuvemSky p{
+    font-family: 'Helvetica';
+    font-weight: bold;
+    font-size: 24px;
 }

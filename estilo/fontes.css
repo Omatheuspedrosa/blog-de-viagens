@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Avenir Light';
+    src: url(../fontes/Avenir\ Light.ttf);
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    src: url(../fontes/eb_garamond/EBGaramond-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fontes/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Lulo Clean';
+    src: url(../fontes/Lulo\ Clean\ W01\ One\ Bold/);
+}
