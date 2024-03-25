@@ -77,7 +77,11 @@ header #barraDePesquisa:hover {
 
 #redesSociais i {
     color: #9a9c9e;
-    margin-right: 12px;
+    margin-right: 20px;
+}
+
+#redesSociais i.ultimo {
+    margin-right: 0;
 }
 
 #redesSociais i:hover {
@@ -169,6 +173,10 @@ main #categorias div section button:hover {
     background-color: #F2F2F2;
 }
 
+#acessorias .vistoEm {
+    margin-top: 20px;
+}
+
 #acessorias h2 {
     font-family: 'EB Garamond';
     font-weight: 100;
@@ -178,9 +186,14 @@ main #categorias div section button:hover {
     border-right: 2px solid gray;
     display: inline; 
     padding-right: 15px;
+    margin-top: 20px;
 }
 
-#acessorias span p.viagensBlog{
+#acessorias .viagensBlog {
+    margin-bottom: 15px;
+}
+
+#acessorias span p.primeirop{
     font-size: 25px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align-last: right;
@@ -198,6 +211,7 @@ main #categorias div section button:hover {
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
+    margin-top: 15  px;
 }
 
 #acessorias  .tourAviao i{
@@ -217,12 +231,14 @@ main #categorias div section button:hover {
     font-size: 21px;
     letter-spacing: 0.2em;
     line-height: 1em;
+    margin-bottom: 22px;
 }
 
 #acessorias .nuvemSky {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-top: 10px;
 }
 
 #acessorias .nuvemSky i {
