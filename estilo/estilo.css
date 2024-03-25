@@ -15,23 +15,17 @@ header {
     align-items: center;
 }
 
-header #barraDePesquisa i {
-    position: absolute;
-    left: 145px; 
-    top: 32px;
-    transform: translateY(-50%);
-    transform: translateX(750%);
-    z-index: 1;
-}
-
 header div input {
-    position: relative;
     width: 153px;
     height: 41px;
     padding: 12px;
     border: none;
     border-bottom: 1px solid gray;
     background-color: #F2F2F2;
+    background-image: url(../imagens/magnifying-glass-solid.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 5px) center;
+    background-position-y: 12px;
 }
 
 header #barraDePesquisa:hover {
@@ -123,7 +117,6 @@ main #boasVindas p.p2 {
 main #categorias {
     height: 475px;
     text-align: center;
-    /* border: 1px solid blueviolet; */
 }
 
 main #categorias p {
