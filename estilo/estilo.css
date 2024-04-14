@@ -1,6 +1,7 @@
 @import url(fontes.css);
 
-body, p {
+body,
+p {
     margin: 0;
     padding: 0;
 }
@@ -30,6 +31,10 @@ header div input {
 
 header #barraDePesquisa:hover {
     border-bottom: 1px solid gray;
+}
+
+.menu-suspenso {
+    display: none;
 }
 
 #menu ul {
@@ -91,8 +96,8 @@ main #boasVindas {
     color: #FFFFFF;
 }
 
-main #boasVindas div{  
-    margin: 80px 0; 
+main #boasVindas div {
+    margin: 80px 0;
 }
 
 main #boasVindas h1 {
@@ -177,7 +182,7 @@ main #categorias div section button:hover {
     color: #000000;
     text-align: start;
     border-right: 2px solid gray;
-    display: inline; 
+    display: inline;
     padding-right: 15px;
     margin-top: 20px;
 }
@@ -186,7 +191,7 @@ main #categorias div section button:hover {
     margin-bottom: 15px;
 }
 
-#acessorias span p.primeirop{
+#acessorias span p.primeirop {
     font-size: 25px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align-last: right;
@@ -202,18 +207,18 @@ main #categorias div section button:hover {
 #acessorias .tourAviao {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
-    margin-top: 15  px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15 px;
 }
 
-#acessorias  .tourAviao i{
+#acessorias .tourAviao i {
     margin-bottom: 5px;
     transform: rotate(315deg);
     transform: translate();
 }
 
-#acessorias .tourAviao p{
+#acessorias .tourAviao p {
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
 }
@@ -239,8 +244,78 @@ main #categorias div section button:hover {
     margin-bottom: 5px;
 }
 
-#acessorias .nuvemSky p{
+#acessorias .nuvemSky p {
     font-family: 'Helvetica';
     font-weight: bold;
     font-size: 24px;
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        border: 1px solid red;
+        width: 320px;
+        height: 120px;
+        box-sizing: border-box;
+        padding: 12px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .menu-suspenso {
+        position: relative;
+        display: inline-block;
+        order: 1;
+        align-self: flex-start;
+    }
+
+    .conteudo-menu {
+        display: none;
+        position: absolute;
+        background-color: #2573DA;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .conteudo-menu a {
+        color: #ffff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .conteudo-menu a:hover {
+        background-color: #f1f1f1
+    }
+
+    .menu-suspenso:hover .conteudo-menu{
+        display: block;
+    } 
+
+    .btmenu {
+        border: none;
+        cursor: pointer;
+    }
+
+    #menu {
+        display: none;
+    }
+
+
+    #redesSociais {
+        align-self: flex-start;
+        order: 0;
+    }
+
+    #barraDePesquisa {
+        width: 280px;
+        height: 41px;
+        align-self: flex-end;
+        order: 2;
+    }
+
+    header div input {
+        width: 100%;
+    }
 }
