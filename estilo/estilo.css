@@ -251,8 +251,9 @@ main #categorias div section button:hover {
 }
 
 @media screen and (max-width: 320px) {
+
+    /* Cabeçalho */
     header {
-        border: 1px solid red;
         width: 320px;
         height: 120px;
         box-sizing: border-box;
@@ -267,15 +268,17 @@ main #categorias div section button:hover {
         display: inline-block;
         order: 1;
         align-self: flex-start;
+        transform: translateX(200%);
     }
 
     .conteudo-menu {
         display: none;
         position: absolute;
         background-color: #2573DA;
-        min-width: 160px;
+        min-width: 100px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
+        transform: translateX(-40%);
     }
 
     .conteudo-menu a {
@@ -306,6 +309,7 @@ main #categorias div section button:hover {
     #redesSociais {
         align-self: flex-start;
         order: 0;
+        transform: translateX(-32%);
     }
 
     #barraDePesquisa {
@@ -317,5 +321,38 @@ main #categorias div section button:hover {
 
     header div input {
         width: 100%;
+    }
+
+    /* Main */
+
+    main {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    main #boasVindas {
+        order: -1;
+        background-position-x: 55%;
+    }
+
+    main #categorias {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        order: 0;
+    }
+
+    main #categorias div {
+        flex-direction: column;
+        order: 1;
+    }
+
+    #acessorias {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        order: 2;
     }
 }
